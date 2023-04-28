@@ -424,6 +424,8 @@ class BaseTuner(stateful.Stateful):
         for trial in best_trials:
             print()
             trial.summary()
+            
+        return best_trials
 
     @property
     def remaining_trials(self):
